@@ -44,7 +44,7 @@ layout: post
 sudo reboot
 ```
 
-### 2.3 安装cuDNN
+### 2.3 安装cuDNN //需要申请，已经完成申请，需要等待一些时间（2天内http://devblogs.nvidia.com/parallelforall/cudnn-v2-higher-performance-deep-learning-gpus/）
 **(03-25: 今天下最新的caffe回来发现编译不过啊一直CUDNN报错浪费了我几个小时没搞定! 后来才发现caffe15小时前的更新开始使用cudnn v2, 但是官网上并没有明显提示!!! 坑爹啊!)**
 cuDNN能加速caffe中conv及pooling的计算。首先下载cuDNN, 然后执行下列命令解压并安装
 ```sh
@@ -136,7 +136,7 @@ deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 6.5, CUDA Runtime Versi
 Result = PASS
 ```
 
-## 4. 安装Intel MKL 或Atlas
+## 4. 安装Intel MKL 或Atlas http://blog.sina.com.cn/s/blog_5941f5c40101h4um.html
 如果没有Intel MKL， 可以用下列命令安装免费的atlas
 ```sh
 sudo apt-get install libatlas-base-dev
